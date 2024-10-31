@@ -1,0 +1,69 @@
+.body{
+    background-image: url("assest/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.enter{
+    text-align: center;
+    margin-top: 100px;
+    text-decoration-line: underline;
+    color: rgb(1, 1, 37);
+    line-height: 60px;
+}
+.enter p{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 20px;
+}
+.enter button{
+    background-color: rgb(1, 1, 41);
+    text-decoration: none;
+    color: white;
+    outline: none;
+    padding: 20px 60px;
+    border: none;
+    font-weight: bold;
+}
+.enter a button{
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+.enter button:hover{
+    background-color: rgb(70, 3, 8);
+    border-radius: 40px;
+}
+
+/* Question # 1 start from here// */
+.questions{
+    display: grid;
+    height: 70vh;
+    margin: 0;
+    place-items: center;
+    background-color: rgb(202, 159, 166);
+}
+.box{
+    border: 2px solid rgb(3, 81, 95);
+    padding: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+#ent{
+    border: none;
+    background-color: rgb(2, 58, 58);
+    border-radius: 10px;
+    color: white;
+    padding: 5px 30px;
+}
+#inp_first, #inp_last{
+    text-align: center;
+    border: 1px solid rgb(4, 79, 92);
+    padding: 4px;
+}
+#show{
+    color: rgb(54, 3, 27);
+    font-weight: bold;
+}

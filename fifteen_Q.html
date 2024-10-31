@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment #21 to 25 || Q # 15</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        .quest {
+            background-color: rgb(94, 202, 206);
+            text-align: center;
+            font-size: 21px;
+            color: rgb(4, 4, 95);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="quest">
+
+    <!-- JavaScript Functionality -->
+    <script>
+        function validPass(password) {
+
+            let hasAlphabet = /[a-zA-Z]/.test(password);
+
+            let hasNumber = /[0-9]/.test(password);
+
+            let startsWithAlphabet = /^[a-zA-Z]/.test(password);
+
+            let isAtLeast6Chars = password.length >= 6;
+
+
+            return hasAlphabet && hasNumber && startsWithAlphabet && isAtLeast6Chars;
+        }
+
+        function checkPassword() {
+            let password = prompt("Enter a valid password:");
+
+            // Loop until a valid password is entered
+            while (!validPass(password)) {
+                alert("Invalid Password!❌  Password must contain both alphabets and numbers, should not start with a number, and must be at least 6 characters long.");
+                password = prompt("TRY AGAIN!! ⚠ Enter a valid password:");
+
+            }
+
+            // Show success message
+            document.write(`<h1>Password Validations!</h1><br><br>Congratulations! ✨🎉 Your password has been successfully accepted!`);
+        }
+
+        // Start the password validation process
+        checkPassword();
+    </script>
+    <br><br>
+    <a href="sixteen_Q.html" style="color: rgb(2, 87, 2);">Next!</a>
+</body>
+
+</html>

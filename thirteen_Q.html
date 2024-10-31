@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment # 21 to 25 || Q # 13</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+      .questions{
+        background-color: rgb(6, 95, 110);
+        color: white;
+      }
+      #inp_first{
+        padding: 5px 30px;
+      }
+      #show{
+        color: rgb(231, 210, 183);
+      }
+    </style>
+</head>
+
+<body class="questions">
+    <div class="box">
+      <h1 style="color: rgb(221, 201, 240);">Check UserName Valid or Invalid!</h1>
+        <label><h2>Enter Username:</h2></label>
+        <input type="text" placeholder="without special Symbol [@.,!]" id="inp_first">
+        <br><br>
+        <button id="ent" onclick="validateUsername()">Check It!</button>
+
+        <h3 id="show"></h3>
+        <a href="fourteen_Q.html" style="color: rgb(119, 179, 119); font-size: 20px;">
+          Next!</a>
+    </div>
+
+    <!-- JavaScript Functionality -->
+    <script>
+        function isValidUsername(username) {
+            
+            const invalidSymbols = /[@.,!]/;
+            return !invalidSymbols.test(username); 
+        }
+
+        function validateUsername() {
+            // Get the value from the input field
+            const username = document.getElementById('inp_first').value;
+
+            // Check if username is valid
+            if (isValidUsername(username)) {
+                document.getElementById('show').innerHTML = "Congsratulation✨! User_Name is Valid: " + "<br>"  + username;
+            } else {
+                document.getElementById('show').innerHTML = "Invalid username! Please Input a valid username" + "<br>" + "without [@ . , !].";
+            }
+        }
+    </script>
+</body>
+
+</html>

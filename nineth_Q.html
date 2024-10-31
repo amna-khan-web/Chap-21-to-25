@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment # 21to 25 || Q # 8;</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        .questions{
+            background-color: rgb(62, 118, 202);
+            
+        }
+        #result{
+            color: rgb(3, 3, 73);
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body class="questions">
+    <div class="box">
+        <h1>String to number Conversion!</h1>
+
+    <p id="result"></p>
+    <a href="tenth_Q.html" style="color: rgb(2, 87, 2);">Next!</a>
+
+    <script>
+        
+        var number = "472";
+
+       
+        let convertNumber = parseInt(number);
+
+        // Display the result in the browser
+        document.getElementById("result").innerHTML = `<h2>Value: ${number} <br>Type: String <br>Value: ${convertNumber} <br>Type: Number</h2>`;
+    </script>
+</body>
+</html>
+

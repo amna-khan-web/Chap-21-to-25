@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment # 21 to 25 || Q # 13</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        .questions {
+            text-align: center;
+            font-size: 30px;
+            color: rgb(4, 4, 95);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="questions">
+    <!-- JavaScript Functionality -->
+    <script>
+        // Array of items
+        const items = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+        // Function to search for an item
+        function searchItem() {
+            // Take user input
+            let userInput = prompt("Welcome to Our Bakery👨🏻‍🍳! What do you want to order Sir/Madam?");
+
+
+            userInput = userInput.toLowerCase();
+
+
+            let index = items.findIndex(item => item.toLowerCase() === userInput);
+
+            // Display message based on search result
+            if (index !== -1) {
+                document.write(`${userInput} is available at index ${index} in Our Bakery👨🏻‍🍳.`);
+            }
+            else {
+                document.write(`We are Sorry! ${userInput} is not available in Our Bakery👨🏻‍🍳.`);
+            }
+
+        }
+
+        // Run the program
+        searchItem();
+
+    </script>
+
+    <a href="fifteen_Q.html" style="color: rgb(2, 87, 2);">Next!</a>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment # 21to 25 || Q # 11;</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body class="questions">
+    <div class="box">
+        <label><h3>Enter a String:</h3></label>
+        <input type="text" placeholder="Type something....." id="inp_first">
+        <br><br>
+        <button id="ent" onclick="input()">Click it!</button>
+
+        <p id="show"></p>
+        <a href="twelveth_Q.html" style="color: rgb(2, 87, 2);">Next!</a>
+
+    </div>
+    <!-- js functionality link start -->
+    <script>
+        function input() {
+            // Get the user input
+            let input = document.getElementById('inp_first').value;
+
+            // Convert to title case
+            let titleCase = input
+                .toLowerCase()
+                .split(' ')
+                .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                .join(' '); 
+            // Display the results in the browser
+            document.getElementById('show').innerHTML = `User Input: ${input} <br><br>Title Case: ${titleCase}`;
+        }
+
+    </script>
+</body>
+
+</html>

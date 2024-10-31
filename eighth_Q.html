@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment # 21to 25 || Q # 8;</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        .questions{
+            background-color: rgb(160, 153, 224);
+        }
+    </style>
+</head>
+
+<body class="questions">
+    <div class="box">
+        <h1>Replace "and" with "&"!</h1>
+
+    <p id="result"></p>
+    <a href="nineth_Q.html" style="color: rgb(2, 87, 2);">Next!</a>
+
+    <script>
+        
+        var message = "Ali and sami are best friends.They play cricket and football together.";
+
+       
+        let newMessage = message.replace(/and/g, "&");
+
+        // Display the result in the browser
+        document.getElementById("result").innerHTML = `${newMessage}`;
+    </script>
+</body>
+</html>
+

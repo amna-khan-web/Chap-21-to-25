@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment # 21to 25 || Q # 2;</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        .questions{
+            background-color: rgb(183, 153, 211);
+        }
+    </style>
+</head>
+
+<body class="questions">
+    <div class="box">
+        <label>Enter Your Mobile Model:</label>
+        <br><br>
+        <input type="text" placeholder="favourite_mob_model" id="inp_first">
+        <br><br>
+        <button id="ent" onclick="input()">Enter</button>
+
+        <p id="show"></p>
+        <a href="third_Q.html" style="color: rgb(2, 87, 2);">Next!</a>
+    </div>
+    <!-- js functionality link start -->
+    <script>
+        function input() {
+            let favoriteModel = document.getElementById('inp_first').value;
+
+      // Calculate the length of the input
+      let inputLength = favoriteModel.length;
+
+// Display the result in the browser
+document.getElementById('show').innerHTML = ("Your favorite mobile phone model is: " + favoriteModel + "<br>");
+document.getElementById('show').innerHTML += ("<br>The length of string is: " + inputLength);
+        }
+    </script>
+    
+</body>
+
+</html>

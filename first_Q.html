@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment # 21to 25 || Q # 1;</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body class="questions">
+    <div class="box">
+        <label>Enter Your First_Name:</label>
+        <br><br>
+        <input type="text" placeholder="First_Name" id="inp_first">
+        <br><br>
+        <label>Enter Your Last_Name:</label>
+        <br><br>
+        <input type="text" placeholder="Last_Name" id="inp_last">
+        <br><br>
+        <button id="ent" onclick="input()">Enter</button>
+
+        <p id="show"></p>
+        <a href="second_Q.html" style="color: rgb(2, 87, 2);">Next!</a>
+
+    </div>
+    <!-- js functionality link start -->
+    <script>
+        function input() {
+            let firstName = document.getElementById('inp_first').value;
+            let lastName = document.getElementById('inp_last').value;
+
+            let fullName = firstName + " " + lastName;
+            document.getElementById('show').innerHTML = 'Hello! How are you, ' + fullName + "<br>Welcome!";
+        }
+    </script>
+</body>
+
+</html>
